@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F4138B121FC4F0F40047F38D /* launchimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4138B111FC4F0F30047F38D /* launchimage.jpg */; };
+		F4138B141FC4F2F20047F38D /* icon copy in Resources */ = {isa = PBXBuildFile; fileRef = F4138B131FC4F2F20047F38D /* icon copy */; };
+		F4138B161FC58BE30047F38D /* Dinner meals in Resources */ = {isa = PBXBuildFile; fileRef = F4138B151FC58BE30047F38D /* Dinner meals */; };
 		F41D16601FBB1E0000988747 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D165F1FBB1E0000988747 /* AppDelegate.m */; };
 		F41D16631FBB1E0000988747 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16621FBB1E0000988747 /* ViewController.m */; };
 		F41D16661FBB1E0000988747 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41D16641FBB1E0000988747 /* Main.storyboard */; };
@@ -15,6 +18,10 @@
 		F41D166E1FBB1E0000988747 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D166D1FBB1E0000988747 /* main.m */; };
 		F41D16781FBB1E0000988747 /* Quick_CookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16771FBB1E0000988747 /* Quick_CookTests.m */; };
 		F41D16831FBB1E0000988747 /* Quick_CookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16821FBB1E0000988747 /* Quick_CookUITests.m */; };
+		F41D16D31FC45AFD00988747 /* BreakfastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16D21FC45AFD00988747 /* BreakfastViewController.m */; };
+		F41D16D61FC45CC200988747 /* LunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16D51FC45CC200988747 /* LunchViewController.m */; };
+		F41D16D91FC45D4E00988747 /* DinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16D81FC45D4E00988747 /* DinnerViewController.m */; };
+		F41D16DC1FC45DFE00988747 /* VegetarianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F4138B111FC4F0F30047F38D /* launchimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launchimage.jpg; sourceTree = "<group>"; };
+		F4138B131FC4F2F20047F38D /* icon copy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "icon copy"; sourceTree = "<group>"; };
+		F4138B151FC58BE30047F38D /* Dinner meals */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Dinner meals"; sourceTree = "<group>"; };
 		F41D165B1FBB1E0000988747 /* Quick Cook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Quick Cook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41D165E1FBB1E0000988747 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F41D165F1FBB1E0000988747 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +61,14 @@
 		F41D167E1FBB1E0000988747 /* Quick CookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Quick CookUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41D16821FBB1E0000988747 /* Quick_CookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quick_CookUITests.m; sourceTree = "<group>"; };
 		F41D16841FBB1E0000988747 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F41D16D11FC45AFD00988747 /* BreakfastViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BreakfastViewController.h; sourceTree = "<group>"; };
+		F41D16D21FC45AFD00988747 /* BreakfastViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakfastViewController.m; sourceTree = "<group>"; };
+		F41D16D41FC45CC200988747 /* LunchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LunchViewController.h; sourceTree = "<group>"; };
+		F41D16D51FC45CC200988747 /* LunchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LunchViewController.m; sourceTree = "<group>"; };
+		F41D16D71FC45D4E00988747 /* DinnerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DinnerViewController.h; sourceTree = "<group>"; };
+		F41D16D81FC45D4E00988747 /* DinnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinnerViewController.m; sourceTree = "<group>"; };
+		F41D16DA1FC45DFE00988747 /* VegetarianViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegetarianViewController.h; sourceTree = "<group>"; };
+		F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegetarianViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +124,18 @@
 				F41D16611FBB1E0000988747 /* ViewController.h */,
 				F41D16621FBB1E0000988747 /* ViewController.m */,
 				F41D16641FBB1E0000988747 /* Main.storyboard */,
+				F41D16DA1FC45DFE00988747 /* VegetarianViewController.h */,
+				F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */,
+				F41D16D71FC45D4E00988747 /* DinnerViewController.h */,
+				F41D16D81FC45D4E00988747 /* DinnerViewController.m */,
+				F41D16D41FC45CC200988747 /* LunchViewController.h */,
+				F41D16D51FC45CC200988747 /* LunchViewController.m */,
+				F41D16D11FC45AFD00988747 /* BreakfastViewController.h */,
+				F41D16D21FC45AFD00988747 /* BreakfastViewController.m */,
 				F41D16671FBB1E0000988747 /* Assets.xcassets */,
+				F4138B151FC58BE30047F38D /* Dinner meals */,
+				F4138B131FC4F2F20047F38D /* icon copy */,
+				F4138B111FC4F0F30047F38D /* launchimage.jpg */,
 				F41D16691FBB1E0000988747 /* LaunchScreen.storyboard */,
 				F41D166C1FBB1E0000988747 /* Info.plist */,
 				F41D166D1FBB1E0000988747 /* main.m */,
@@ -238,8 +267,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4138B161FC58BE30047F38D /* Dinner meals in Resources */,
+				F4138B121FC4F0F40047F38D /* launchimage.jpg in Resources */,
 				F41D166B1FBB1E0000988747 /* LaunchScreen.storyboard in Resources */,
 				F41D16681FBB1E0000988747 /* Assets.xcassets in Resources */,
+				F4138B141FC4F2F20047F38D /* icon copy in Resources */,
 				F41D16661FBB1E0000988747 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,6 +300,10 @@
 				F41D16631FBB1E0000988747 /* ViewController.m in Sources */,
 				F41D166E1FBB1E0000988747 /* main.m in Sources */,
 				F41D16601FBB1E0000988747 /* AppDelegate.m in Sources */,
+				F41D16DC1FC45DFE00988747 /* VegetarianViewController.m in Sources */,
+				F41D16D31FC45AFD00988747 /* BreakfastViewController.m in Sources */,
+				F41D16D91FC45D4E00988747 /* DinnerViewController.m in Sources */,
+				F41D16D61FC45CC200988747 /* LunchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
