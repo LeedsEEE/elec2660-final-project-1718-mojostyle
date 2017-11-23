@@ -22,6 +22,7 @@
 		F41D16D61FC45CC200988747 /* LunchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16D51FC45CC200988747 /* LunchViewController.m */; };
 		F41D16D91FC45D4E00988747 /* DinnerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16D81FC45D4E00988747 /* DinnerViewController.m */; };
 		F41D16DC1FC45DFE00988747 /* VegetarianViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */; };
+		F4E8E9731FC7736E003E5F41 /* SegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E8E9721FC7736E003E5F41 /* SegmentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,8 @@
 		F41D16D81FC45D4E00988747 /* DinnerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DinnerViewController.m; sourceTree = "<group>"; };
 		F41D16DA1FC45DFE00988747 /* VegetarianViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VegetarianViewController.h; sourceTree = "<group>"; };
 		F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VegetarianViewController.m; sourceTree = "<group>"; };
+		F4E8E9711FC7736E003E5F41 /* SegmentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SegmentViewController.h; sourceTree = "<group>"; };
+		F4E8E9721FC7736E003E5F41 /* SegmentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SegmentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				F41D16611FBB1E0000988747 /* ViewController.h */,
 				F41D16621FBB1E0000988747 /* ViewController.m */,
 				F41D16641FBB1E0000988747 /* Main.storyboard */,
+				F4E8E9711FC7736E003E5F41 /* SegmentViewController.h */,
+				F4E8E9721FC7736E003E5F41 /* SegmentViewController.m */,
 				F41D16DA1FC45DFE00988747 /* VegetarianViewController.h */,
 				F41D16DB1FC45DFE00988747 /* VegetarianViewController.m */,
 				F41D16D71FC45D4E00988747 /* DinnerViewController.h */,
@@ -301,6 +306,7 @@
 				F41D166E1FBB1E0000988747 /* main.m in Sources */,
 				F41D16601FBB1E0000988747 /* AppDelegate.m in Sources */,
 				F41D16DC1FC45DFE00988747 /* VegetarianViewController.m in Sources */,
+				F4E8E9731FC7736E003E5F41 /* SegmentViewController.m in Sources */,
 				F41D16D31FC45AFD00988747 /* BreakfastViewController.m in Sources */,
 				F41D16D91FC45D4E00988747 /* DinnerViewController.m in Sources */,
 				F41D16D61FC45CC200988747 /* LunchViewController.m in Sources */,
