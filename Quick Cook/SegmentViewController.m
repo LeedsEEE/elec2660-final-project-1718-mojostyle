@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.servingSlidervalue = 1;
+    self.servingSliderIndicator.text = [NSString stringWithFormat:@"%.0f Person(s)", self.servingSlidervalue];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -59,5 +62,11 @@
         default:
             break;
     }
+}
+
+- (IBAction)servingSlider:(UISlider *)sender {
+    
+    self.servingSlidervalue = sender.value;
+    self.servingSliderIndicator.text = [NSString stringWithFormat:@"%.0f Person(s)",sender.value];
 }
 @end

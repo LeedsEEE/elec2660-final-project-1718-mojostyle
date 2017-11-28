@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Breakfast-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="BreakfastViewController" sceneMemberID="viewController">
@@ -18,23 +18,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J5r-36-HXY">
+                                <rect key="frame" x="16" y="288" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aw5-zw-54v">
-                                <rect key="frame" x="149" y="75" width="76" height="76"/>
+                                <rect key="frame" x="16" y="89" width="343" height="191"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="1f1-8Q-bFG" kind="show" id="m4b-ro-KWY"/>
+                                    <segue destination="1f1-8Q-bFG" kind="show" id="Prg-Yg-zl5"/>
                                 </connections>
                             </button>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jpw-Rs-syu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="MJk-6l-Lj5"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Breakfast" id="5iw-0n-N0J"/>
+                    <navigationItem key="navigationItem" title="Title" id="ksc-N0-HZg"/>
+                    <size key="freeformSize" width="375" height="667"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9367" y="-1005"/>
+            <point key="canvasLocation" x="-9367.2000000000007" y="-1005.2473763118442"/>
         </scene>
         <!--Segment View Controller-->
         <scene sceneID="w1v-oe-A0k">
@@ -44,39 +58,86 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FdZ-Vu-KWE" userLabel="View-Ingredients">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-uc-TJE" userLabel="View-Instructions">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
-                            </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WWK-uc-TJE" userLabel="View-Instructions">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sqw-nA-Q0s" userLabel="Instructions Text">
+                                        <rect key="frame" x="0.0" y="212" width="375" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <color key="backgroundColor" name="selectedControlColor" catalog="System" colorSpace="catalog"/>
                             </view>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrC-eU-3Bw" userLabel="View-Nutrition">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FdZ-Vu-KWE" userLabel="View-Ingredients">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Servings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rr-jZ-Cy0">
+                                        <rect key="frame" x="8" y="208" width="83" height="29"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lD3-E9-iWE">
+                                        <rect key="frame" x="278" y="208" width="97" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="kHF-IJ-OeD">
+                                        <rect key="frame" x="90" y="216" width="184" height="30"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <connections>
+                                            <action selector="servingSlider:" destination="1f1-8Q-bFG" eventType="valueChanged" id="ZWa-Ia-69e"/>
+                                        </connections>
+                                    </slider>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-V7-QBb" userLabel="Ingredient Text">
+                                        <rect key="frame" x="0.0" y="246" width="375" height="421"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" name="quaternaryLabelColor" catalog="System" colorSpace="catalog"/>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wrC-eU-3Bw" userLabel="View-Nutrition">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="EAc-jA-B2L" userLabel="Nutrition Text">
+                                        <rect key="frame" x="0.0" y="212" width="375" height="455"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
                                 <color key="backgroundColor" red="0.45085787770000002" green="0.98829740290000001" blue="0.83763033149999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gJj-V7-QBb">
-                                <rect key="frame" x="8" y="216" width="359" height="440"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-Fn-zFP">
-                                <rect key="frame" x="0.0" y="157" width="375" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q40-Fn-zFP">
+                                <rect key="frame" x="0.0" y="155" width="375" height="21"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-aA-EBv" userLabel="Meal Image">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OmW-aA-EBv" userLabel="Meal Image">
                                 <rect key="frame" x="12" y="5" width="350" height="150"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="Ozd-Wj-dok"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sGe-v3-pOS">
-                                <rect key="frame" x="0.0" y="182" width="375" height="29"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="sGe-v3-pOS">
+                                <rect key="frame" x="0.0" y="177" width="375" height="29"/>
+                                <autoresizingMask key="autoresizingMask"/>
                                 <segments>
                                     <segment title="Ingredients"/>
                                     <segment title="Instructions"/>
@@ -89,48 +150,26 @@
                             </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="sGe-v3-pOS" firstAttribute="top" secondItem="Q40-Fn-zFP" secondAttribute="bottom" constant="4" id="0na-5u-8Bu"/>
-                            <constraint firstAttribute="trailing" secondItem="Q40-Fn-zFP" secondAttribute="trailing" id="5Hy-TF-gpa"/>
-                            <constraint firstItem="WWK-uc-TJE" firstAttribute="leading" secondItem="wrC-eU-3Bw" secondAttribute="leading" id="5K7-0b-xCc"/>
-                            <constraint firstItem="gJj-V7-QBb" firstAttribute="top" secondItem="sGe-v3-pOS" secondAttribute="bottom" constant="6" id="5cI-bi-Egb"/>
-                            <constraint firstItem="OmW-aA-EBv" firstAttribute="centerX" secondItem="gJj-V7-QBb" secondAttribute="centerX" id="6qz-UW-dcU"/>
-                            <constraint firstItem="OmW-aA-EBv" firstAttribute="top" secondItem="Q40-Fn-zFP" secondAttribute="bottom" constant="-173" id="Chg-vn-pCF"/>
-                            <constraint firstItem="Q40-Fn-zFP" firstAttribute="top" secondItem="hmw-J5-glT" secondAttribute="top" constant="157" id="Dsi-EC-Ys2"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="trailing" secondItem="wrC-eU-3Bw" secondAttribute="trailing" id="GBf-G8-dHm"/>
-                            <constraint firstItem="OmW-aA-EBv" firstAttribute="leading" secondItem="vVf-gE-DwQ" secondAttribute="leading" constant="12" id="IcW-PI-f6Y"/>
-                            <constraint firstItem="Q40-Fn-zFP" firstAttribute="leading" secondItem="hmw-J5-glT" secondAttribute="leading" id="JQI-pH-m3D"/>
-                            <constraint firstItem="Q40-Fn-zFP" firstAttribute="centerX" secondItem="OmW-aA-EBv" secondAttribute="centerX" id="MZd-mX-8pR"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="leading" secondItem="wrC-eU-3Bw" secondAttribute="leading" id="NW2-hQ-RWE"/>
-                            <constraint firstItem="sGe-v3-pOS" firstAttribute="leading" secondItem="wrC-eU-3Bw" secondAttribute="leading" id="aoF-rX-Sg2"/>
-                            <constraint firstItem="vVf-gE-DwQ" firstAttribute="bottom" secondItem="gJj-V7-QBb" secondAttribute="bottom" constant="11" id="fPV-ua-6vB"/>
-                            <constraint firstItem="WWK-uc-TJE" firstAttribute="top" secondItem="wrC-eU-3Bw" secondAttribute="top" id="geH-Ts-xG7"/>
-                            <constraint firstItem="WWK-uc-TJE" firstAttribute="trailing" secondItem="Q40-Fn-zFP" secondAttribute="trailing" id="hGc-qz-c7c"/>
-                            <constraint firstItem="sGe-v3-pOS" firstAttribute="trailing" secondItem="FdZ-Vu-KWE" secondAttribute="trailing" id="hrm-s5-UJg"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="top" secondItem="Q40-Fn-zFP" secondAttribute="top" constant="-157" id="lkO-Bl-fO0"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="bottom" secondItem="vVf-gE-DwQ" secondAttribute="bottom" id="nEq-dA-hJl"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="bottom" secondItem="WWK-uc-TJE" secondAttribute="bottom" id="onA-44-XUT"/>
-                            <constraint firstItem="sGe-v3-pOS" firstAttribute="trailing" secondItem="Q40-Fn-zFP" secondAttribute="trailing" id="oyW-JC-zec"/>
-                            <constraint firstItem="gJj-V7-QBb" firstAttribute="leading" secondItem="vVf-gE-DwQ" secondAttribute="leading" constant="8" id="sne-hJ-TGZ"/>
-                            <constraint firstItem="Q40-Fn-zFP" firstAttribute="centerX" secondItem="gJj-V7-QBb" secondAttribute="centerX" id="tNk-34-Udg"/>
-                            <constraint firstItem="sGe-v3-pOS" firstAttribute="leading" secondItem="Q40-Fn-zFP" secondAttribute="leading" id="v1g-kc-8Er"/>
-                            <constraint firstItem="wrC-eU-3Bw" firstAttribute="bottom" secondItem="vVf-gE-DwQ" secondAttribute="bottom" id="xEk-0G-GPP"/>
-                            <constraint firstItem="FdZ-Vu-KWE" firstAttribute="top" secondItem="WWK-uc-TJE" secondAttribute="top" id="zoz-mO-xgJ"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vVf-gE-DwQ"/>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
+                        <outlet property="ingredientText" destination="gJj-V7-QBb" id="8C4-4s-OpU"/>
                         <outlet property="ingredientsView" destination="FdZ-Vu-KWE" id="h74-1Z-PdL"/>
+                        <outlet property="instructionsText" destination="Sqw-nA-Q0s" id="BEp-6K-7Z0"/>
                         <outlet property="instructionsView" destination="WWK-uc-TJE" id="aLD-AR-VM6"/>
+                        <outlet property="mealImage" destination="OmW-aA-EBv" id="iFP-UR-R6a"/>
+                        <outlet property="mealName" destination="Q40-Fn-zFP" id="2Rp-gc-zxT"/>
+                        <outlet property="nutritionText" destination="EAc-jA-B2L" id="io1-DP-Eky"/>
                         <outlet property="nutritionView" destination="wrC-eU-3Bw" id="0Jd-Qh-E2k"/>
                         <outlet property="segment" destination="sGe-v3-pOS" id="gTz-Fd-5HM"/>
+                        <outlet property="servingSliderIndicator" destination="lD3-E9-iWE" id="WCW-Nd-xhq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bz0-s5-Jdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-8564" y="-857"/>
+            <point key="canvasLocation" x="-7610.3999999999996" y="-834.33283358320841"/>
         </scene>
         <!--Dinner-->
         <scene sceneID="HLJ-lf-2PG">
@@ -140,10 +179,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a10-RU-sNM">
-                                <rect key="frame" x="26" y="20" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNj-qz-XYU">
+                                <rect key="frame" x="16" y="221" width="343" height="207"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button" backgroundImage="Slow cooked Ziti.jpg"/>
+                                <connections>
+                                    <action selector="zitiButton:" destination="7TQ-pU-PsL" eventType="touchUpInside" id="PHz-Kz-01E"/>
+                                    <segue destination="1f1-8Q-bFG" kind="showDetail" id="kxt-Qr-KKM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XQ-ZU-YqJ">
+                                <rect key="frame" x="16" y="424" width="343" height="194"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button" backgroundImage="Spagetti Meatballs.jpg"/>
+                                <connections>
+                                    <action selector="spagettiMeatBallButton:" destination="7TQ-pU-PsL" eventType="touchUpInside" id="hdW-gm-O3o"/>
+                                    <segue destination="1f1-8Q-bFG" kind="showDetail" id="0sJ-Tp-CF7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdw-CU-Hsc">
+                                <rect key="frame" x="16" y="0.0" width="343" height="213"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <state key="normal" title="Button" image="jolof.jpg"/>
+                                <connections>
+                                    <action selector="jollofButton:" destination="7TQ-pU-PsL" eventType="touchUpInside" id="mQr-7H-v6T"/>
+                                    <segue destination="1f1-8Q-bFG" kind="showDetail" id="F9P-SC-Giu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -153,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xbg-Fq-GPs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-9367" y="432"/>
+            <point key="canvasLocation" x="-9367.2000000000007" y="431.33433283358323"/>
         </scene>
         <!--Vegetarian-->
         <scene sceneID="6Iw-jl-PNJ">
@@ -162,6 +223,18 @@
                     <view key="view" contentMode="scaleToFill" id="Bgy-UW-T8O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm8-h1-hAv">
+                                <rect key="frame" x="16" y="20" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qnp-kl-l71">
+                                <rect key="frame" x="16" y="314" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="i1r-ud-FYh"/>
                     </view>
@@ -178,6 +251,18 @@
                     <view key="view" contentMode="scaleToFill" id="a0k-fl-1rv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfO-Jz-Oii">
+                                <rect key="frame" x="16" y="20" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jhy-Vu-558">
+                                <rect key="frame" x="16" y="331" width="343" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="icN-PY-AZy"/>
                     </view>
@@ -210,4 +295,12 @@
             <point key="canvasLocation" x="-10370" y="-99"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Slow cooked Ziti.jpg" width="500" height="500"/>
+        <image name="Spagetti Meatballs.jpg" width="966" height="725"/>
+        <image name="jolof.jpg" width="1600" height="900"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="0sJ-Tp-CF7"/>
+    </inferredMetricsTieBreakers>
 </document>

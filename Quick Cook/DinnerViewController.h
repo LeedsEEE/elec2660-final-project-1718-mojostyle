@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SegmentViewController.h"
+#import "Meals.h"
+#import "Ingredients.h"
+#import "CookingInstructions.h"
+
 
 @interface DinnerViewController : UIViewController
+
+
+
+- (IBAction)jollofButton:(UIButton *)sender;
+- (IBAction)zitiButton:(UIButton *)sender;
+- (IBAction)spagettiMeatBallButton:(UIButton *)sender;
 
 @end
